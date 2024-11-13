@@ -42,7 +42,7 @@ stage('stage-3')  {
 aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 503561451240.dkr.ecr.ap-south-1.amazonaws.com
 
 
-docker build -t  clado-pipjen:p2 https://github.com/jyothymolvt/project1.git
+docker build -t  clado-pipjen:p2 .
 
 docker tag clado-pipjen:p2 503561451240.dkr.ecr.ap-south-1.amazonaws.com/clado-pipjen:p2
 
